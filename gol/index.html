@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+<title>Gol - Cartão de Embarque</title>
+
+<link type="text/css" rel="stylesheet" href="print_arquivos/newprint.css">
+<script type="text/javascript" language="javascript" src="print_arquivos/jquery-1.js"></script>
+<script>
+var dados = {
+    'voo' : '1329',
+    'portao' : '5',
+    'assento': '9E',
+    'embarque': '20:08',
+    'nome' : 'PEDRO MARKUN',
+    'localizador' : 'SHD3JK',
+    'data' : '19NOV12',
+    'de' : 'Florianópolis (FLN)',
+    'para': 'SAO-Congonhas-SP (CGH)',
+    'tarifa' : 'FLEXIVEL',
+    'documento' : '55136343'
+}
+
+$(document).ready(function () {
+    $.each(dados, function(campo,valor) {
+        $("#"+campo).html(valor);
+    });
+    $("input").keyup(function() {
+        $("#"+this.name).html(this.value);
+    });
+});
+
+</script>
+
+<style>
+    #formula {
+        width:300px;
+        float:right;
+    }
+
+    @media print {
+        #formula {
+            display:none;
+        }
+    }
+</style>
+</head>
+<body>
+
+
+<script type="text/javascript">
+	
+
+$(window).load(function(){
+	
+	//window.print();
+		
+	
+});
+	
+	
+</script>
+
+<div id="formula">
+    <input type="text" name="voo" placeholder="1329"></input>
+    <input type="text" name="portao" placeholder="5"></input>
+    <input type="text" name="assento" placeholder="9E"></input>
+    <input type="text" name="embarque" placeholder="20:08"></input>
+    <input type="text" name="nome" placeholder="PEDRO MARKUN"></input>
+    <input type="text" name="localizador" placeholder="SHD3JK"></input>
+    <input type="text" name="data" placeholder="19NOV12"></input>
+    <input type="text" name="de" placeholder="Florianópolis (FLN)"></input>
+    <input type="text" name="para" placeholder="SAO-Congonhas-SP (CGH)"></input>
+    <input type="text" name="tarifa" placeholder="FLEXIVEL"></input>
+    <input type="text" name="documento" placeholder="55136443"></input>
+</div>
+
+<table border="0" cellpadding="0" cellspacing="0" width="597">
+ <tbody>
+  <tr>
+    <td><img id="id8" src="print_arquivos/8_2.jpg" alt="" height="77" width="431">
+    	<label style="position: absolute; float: left; margin-top: 30px; margin-left: 20px;"><font style="font-size:17px; font-weight: bold;" face="Arial"></font></label>
+    </td>
+  </tr>
+  <tr>
+    <td><table border="0" cellpadding="0" cellspacing="0" width="597">
+        <tbody><tr>
+          <td rowspan="2" width="55"><img id="id1" src="print_arquivos/73.jpg" alt="" height="45" width="55"></td>
+          <td><span class="itemName"><b>voo</b></span><span class="subItemName">(flight)</span></td>
+          <td><span class="itemName">portão</span><span class="subItemName">(gate)</span></td>
+          <td><span class="itemName">assento</span><span class="subItemName">(seat)</span></td>
+          <td rowspan="2">
+          <table border="0" cellpadding="0" cellspacing="0" width="347">
+         	 <tbody><tr>
+              	<td rowspan="3" height="45" width="40">
+              		<img id="id162" src="print_arquivos/162.jpg" alt="" height="45" width="40">
+              	</td>
+              	<td rowspan="3" width="109">
+              		<span class="itemName"><b>horário de embarque</b></span><br>
+              		<span class="subItemName">(boarding time)</span>
+              	</td>
+              	<td><img id="id2" src="print_arquivos/83.jpg" alt="" height="15" width="78"></td>
+                <td><img id="id3" src="print_arquivos/84.jpg" alt="" height="15" width="120"></td>
+              </tr>
+              <tr>
+                <td height="21" valign="top" width="78"><font style="font-size:15px" face="Arial" id="embarque"><b>20:08</b></font></td>
+                <td><font style="font-size: 17px" face="Aria"><b><!-- GRUPO 1 --></b></font> </td>
+              </tr>
+              <tr>
+                <td><img id="id8" src="print_arquivos/89.jpg" alt="" height="9" width="78"></td>
+                <td><img id="id9" src="print_arquivos/90.jpg" alt="" height="9" width="120"></td>
+              </tr>
+            </tbody></table>
+          </td>
+        </tr>
+        <tr>
+          <td height="24" valign="top" width="63"><font style="font-size:15px" face="Arial"><b id="voo">1329</b></font></td>
+          <td height="24" valign="top" width="64"><font style="font-size:15px" face="Arial"><b id="portao">5</b></font></td>
+          <td height="24" valign="top" width="68"><font style="font-size:15px" face="Arial"><b id="assento">9E</b></font></td>
+        </tr>
+        <tr>
+          <td colspan="5"><table border="0" cellpadding="0" cellspacing="0" width="597">
+              <tbody><tr>
+                <td rowspan="8" style="text-align: center; padding-left: 13px;" width="86">
+                
+<!--                 	<img id="id1" src="images/bp/122.jpg" width="88" height="148" alt="" /> -->
+                	<img src="print_arquivos/BarcodeBuilder.png" class="barCodeGol" height="148" width="48">
+                
+                </td>                
+                <td colspan="6"><span class="itemName">nome</span><span class="subItemName">(name)</span></td>
+              </tr>
+              <tr>
+                <td colspan="6" height="20" valign="top" width="174"><font face="Arial" size="3"><b id="nome">PEDRO MARKUN</b></font></td>
+              </tr>
+              <tr>
+                <td width="100"><span class="itemName">localizador</span></td>
+                <td height="13" valign="top" width="97"><font style="font-size:9px" face="Arial" color="#333333" id="localizador">SHD3JK</font></td>
+                <td width="90"><span class="itemName">classe</span><span class="subItemName">(class)</span></td>
+                <td height="13" valign="top" width="76"><font style="font-size:9px" face="Arial" color="#333333">V</font></td>
+                <td width="53"><span class="itemName">data</span><span class="subItemName">(date)</span></td>
+                <td height="13" valign="top" width="149"><font style="font-size:9px" face="Arial" color="#333333" id="data">19NOV12</font></td>
+              </tr>
+              <tr>
+                <td><span class="itemName">de</span><span class="subItemName">(from)</span></td>
+                <td height="12" valign="top" width="97"><font style="font-size:9px" face="Arial" color="#333333" id="de">Florianópolis (FLN) </font></td>
+                <td><span class="itemName">para</span><span class="subItemName">(to)</span></td>
+                <td height="12" valign="top" width="76"><font style="font-size:9px" face="Arial" color="#333333" id="para">SAO-Congonhas-SP (CGH) </font></td>
+                <td colspan="2" rowspan="5">
+               		<div id="divImgInfraeroCode" style="text-align: center;">						
+						
+						
+						
+						
+							<div style="font-size: 9px">Embarque Doméstico</div>
+								<img src="print_arquivos/BarcodeBuilder_002.png" height="48" width="160">
+							<div style="text-align: center;font-size: 9px;">00316461122124</div>
+						
+					
+          	 		 
+                        
+					</div>
+				</td>
+              </tr>
+              <tr>
+                <td><span class="itemName">tarifa</span><span class="subItemName">(fare)</span></td>
+                <td height="12" valign="top" width="97"><font style="font-size:9px" face="Arial" color="#333333" id="tarifa">FLEXIVEL</font></td>
+                <td><span class="itemName">documento</span><span class="subItemName">(id)</span></td>
+                <td height="12" valign="top" width="76"><font style="font-size:9px" face="Arial" color="#333333" id="documento">55136343</font></td>
+              </tr>
+              <tr>
+                <td><span class="itemName">telefone</span><span class="subItemName">(phone)</span></td>
+                <td height="14" valign="top" width="97"><font style="font-size:9px" face="Arial" color="#333333"></font></td>
+                <td><span class="itemName">contato</span><span class="subItemName">(contact)</span></td>
+                <td height="14" valign="top" width="76"><font style="font-size:9px" face="Arial" color="#333333"></font></td>
+              </tr>
+              <tr>
+                <td><span class="itemName">parentesco</span><span class="subItemName">(kinship)</span></td>
+                <td height="16" valign="top" width="97"><font style="font-size:9px" face="Arial" color="#333333"></font></td>
+                <td width="69"><img id="id26" src="print_arquivos/116.jpg" alt="" height="16" width="69"></td>
+                <td width="76"><img id="id27" src="print_arquivos/117.jpg" alt="" height="16" width="76"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td width="69"><img id="id30" src="print_arquivos/120.jpg" alt="" height="41" width="69"></td>
+                <td><font style="font-size:11px;">Sequência no 124</font></td>
+              </tr>
+            </tbody></table></td>
+        </tr>
+      </tbody></table></td>
+  </tr>
+</tbody></table>
+    
+
+		
+	
+	
+	<script type="text/javascript">
+	$(document).ready(function(){
+	if($.browser.safari)
+	{
+		$('.borderTime').css('width','121px');
+	}
+	});
+	</script>
+
+</body></html>
