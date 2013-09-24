@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<HTML xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<HEAD>
+<TITLE>tam-html.html</TITLE>
+
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<STYLE type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft10{font-size:10px;font-family:Helvetica;color:#265992;}
+	.ft11{font-size:10px;font-family:Helvetica;color:#265992;}
+	.ft12{font-size:13px;font-family:Helvetica;color:#265992;}
+	.ft13{font-size:34px;font-family:Times;color:#000000;}
+	.ft14{font-size:10px;font-family:Times;color:#000000;}
+	.ft15{font-size:19px;font-family:Helvetica;color:#000000;}
+	.ft16{font-size:16px;font-family:Helvetica;color:#000000;}
+	.ft17{font-size:13px;font-family:Helvetica;color:#000000;}
+	.ft18{font-size:8px;font-family:Times;color:#000000;}
+	.ft19{font-size:16px;font-family:Times;color:#000000;}
+	.ft110{font-size:19px;font-family:Times;color:#000000;}
+	.ft111{font-size:13px;font-family:Times;color:#000000;}
+	.ft112{font-size:34px;font-family:Times;color:#ffffff;}
+	.ft113{font-size:34px;font-family:Times;color:#265992;}
+	.ft114{font-size:28px;font-family:Helvetica;color:#265992;}
+	.ft115{font-size:28px;font-family:Times;color:#265992;}
+	.ft116{font-size:25px;font-family:Times;color:#000000;}
+	.ft117{font-size:25px;font-family:Helvetica;color:#000000;}
+	.ft118{font-size:10px;font-family:Times;color:#000000;}
+	.ft119{font-size:22px;font-family:Helvetica;color:#000000;}
+	.ft120{font-size:10px;font-family:Helvetica;color:#000000;}
+	.ft121{font-size:14px;font-family:Times;color:#ffffff;}
+	.ft122{font-size:28px;font-family:Times;color:#000000;}
+	.ft123{font-size:31px;font-family:Times;color:#ff0000;}
+	.ft124{font-size:19px;line-height:25px;font-family:Helvetica;color:#000000;}
+	.ft125{font-size:8px;line-height:14px;font-family:Times;color:#000000;}
+-->
+</STYLE>
+<script type="text/javascript" language="javascript" src="js/jquery-1.js"></script>
+<script>
+var dados = {
+    'voo' : 'JJ3112',
+    'assento': '6D',
+    'embarque': '09:05',
+    'embarque_p': '09:45',
+    'embarque_c': '10:45',
+    'nome' : 'MARKUN / PEDRO',
+    'localizador' : 'SHD3JK',
+    'data' : '19JUN13',
+    'data_g' : '19 Jun 2013',
+    'de' : 'Florianópolis (FLN)',
+    'para': 'SAO-Congonhas-SP (CGH)',
+    'sigla_destino' : 'FLN / GRU',
+    'tarifa' : 'FLEXIVEL',
+    'documento' : '55136343',
+    'etkt' : '9574747999082'
+}
+
+$(document).ready(function () {
+    $.each(dados, function(campo,valor) {
+        $("."+campo).html(valor);
+    });
+    $("input").keyup(function() {
+        $("."+this.name).html(this.value);
+    });
+});
+
+</script>
+
+<style>
+    #formula {
+        width:300px;
+        float:right;
+    }
+
+    @media print {
+        #formula {
+            display:none;
+        }
+    }
+</style>
+</HEAD>
+<BODY bgcolor="#A0A0A0" vlink="blue" link="blue">
+
+<div id="formula">
+    <input type="text" name="voo" placeholder="JJ3112"></input>
+    <input type="text" name="assento" placeholder="6D"></input>
+    <input type="text" name="embarque" placeholder="09:05"></input>
+    <input type="text" name="embarque_p" placeholder="09:45"></input>
+    <input type="text" name="embarque_c" placeholder="10:45"></input>
+    <input type="text" name="nome" placeholder="MARKUN / PEDRO"></input>
+    <input type="text" name="nome_camel" placeholder="Markun / Pedro Mr"></input>
+    <input type="text" name="localizador" placeholder="SHD3JK"></input>
+    <input type="text" name="data" placeholder="19JUN13"></input>
+    <input type="text" name="data_g" placeholder="19 Jun 2013"></input>
+    <input type="text" name="de" placeholder="Florianópolis (FLN)"></input>
+    <input type="text" name="para" placeholder="SAO-Congonhas-SP (CGH)"></input>
+    <input type="text" name="sigla_destino" placeholder="FLN / GRU"></input>
+    <input type="text" name="etkt" placeholder="9574747999082"></input>
+    <input type="text" name="documento" placeholder="55136443"></input>
+</div>
+
+<DIV id="page1-div" style="position:relative;width:892px;height:1261px;">
+<IMG width="892" height="1261" src="tam001.png" alt="background image"/>
+<P style="position:absolute;top:240px;left:41px;white-space:nowrap" class="ft10"><b>VOO &#160;</b>| &#160;FLIGHT</P>
+<P style="position:absolute;top:240px;left:372px;white-space:nowrap" class="ft10"><b>DE &#160;</b>| &#160;FROM</P>
+<P style="position:absolute;top:240px;left:623px;white-space:nowrap" class="ft10"><b>PARA &#160;</b>| &#160;TO</P>
+<P style="position:absolute;top:523px;left:38px;white-space:nowrap" class="ft10"><b>INFORMAÇÕES DE VIAGEM</b>&#160;| TRAVEL INFORMATION</P>
+<P style="position:absolute;top:564px;left:630px;white-space:nowrap" class="ft12"><b>PROGRAMA FIDELIZAÇÃO</b></P>
+<P style="position:absolute;top:647px;left:630px;white-space:nowrap" class="ft12"><b>CLASSE DA VIAGEM</b></P>
+<P style="position:absolute;top:707px;left:630px;white-space:nowrap" class="ft12"><b>LOCALIZADOR</b></P>
+<P style="position:absolute;top:159px;left:48px;white-space:nowrap"  class="ft13 nome_camel">Markun / Pedro Mr</P>
+<P style="position:absolute;top:432px;left:41px;white-space:nowrap" class="ft14">EMBARQUE&#160;| BOARDING</P>
+<P style="position:absolute;top:265px;left:372px;white-space:nowrap" class="ft124"><b class="de">Florianopolis Hercilio<br/>L</b></P>
+<P style="position:absolute;top:392px;left:374px;white-space:nowrap" class="ft16"><b class="data_g">19 Jun 2013</b></P>
+<P style="position:absolute;top:434px;left:374px;white-space:nowrap" class="ft16"><b class="embarque_p">09:45</b></P>
+<P style="position:absolute;top:434px;left:625px;white-space:nowrap" class="ft16"><b class="embarque_c">10:55</b></P>
+<P style="position:absolute;top:584px;left:630px;white-space:nowrap" class="ft17"><b></b></P>
+<P style="position:absolute;top:605px;left:630px;white-space:nowrap" class="ft17"><b></b></P>
+<P style="position:absolute;top:667px;left:630px;white-space:nowrap" class="ft17"><b>Economy</b></P>
+<P style="position:absolute;top:729px;left:630px;white-space:nowrap" class="ft17"><b class="localizador">2BXCAV</b></P>
+<P style="position:absolute;top:791px;left:630px;white-space:nowrap" class="ft17"><b>ETKT</b></P>
+<P style="position:absolute;top:392px;left:625px;white-space:nowrap" class="ft16"><b class="data_g">19 Jun 2013</b></P>
+<P style="position:absolute;top:647px;left:430px;white-space:nowrap" class="ft18">Bagagem de &#160;mão</P>
+<P style="position:absolute;top:560px;left:121px;white-space:nowrap" class="ft18">Informações do Cartão de Embarque</P>
+<P style="position:absolute;top:560px;left:430px;white-space:nowrap" class="ft18">Bagagem Despachada</P>
+<P style="position:absolute;top:1222px;left:763px;white-space:nowrap" class="ft19">Seq:</P>
+<P style="position:absolute;top:1222px;left:807px;white-space:nowrap" class="ft110">003</P>
+<P style="position:absolute;top:770px;left:630px;white-space:nowrap" class="ft12"><b>BILHETE</b></P>
+<P style="position:absolute;top:813px;left:630px;white-space:nowrap" class="ft17"><b>9574747999082</b></P>
+<P style="position:absolute;top:391px;left:168px;white-space:nowrap" class="ft111">Confirme no Aeroporto</P>
+<P style="position:absolute;top:647px;left:121px;white-space:nowrap" class="ft18">Documentos de Viagem</P>
+<P style="position:absolute;top:286px;left:55px;white-space:nowrap" class="ft112 voo">JJ3112</P>
+<P style="position:absolute;top:286px;left:230px;white-space:nowrap" class="ft112 assento">6D</P>
+<P style="position:absolute;top:665px;left:430px;white-space:nowrap" class="ft125">A&#160;&#160;bagagem&#160;&#160;de&#160;&#160;mão&#160;&#160;deve&#160;&#160;respeitar&#160;&#160;os<br/>limites</P>
+<P style="position:absolute;top:679px;left:475px;white-space:nowrap" class="ft18">&#160;de</P>
+<P style="position:absolute;top:679px;left:504px;white-space:nowrap" class="ft18">&#160;115cm</P>
+<P style="position:absolute;top:679px;left:553px;white-space:nowrap" class="ft18">&#160;(soma</P>
+<P style="position:absolute;top:679px;left:600px;white-space:nowrap" class="ft18">&#160;da</P>
+<P style="position:absolute;top:693px;left:430px;white-space:nowrap" class="ft125">altura+largura+comprimento)&#160;&#160;e&#160;&#160;peso<br/>máximo&#160;&#160;de&#160;&#160;5kgs.&#160;&#160;Bagagens&#160;&#160;de&#160;&#160;mão<br/>acima&#160;&#160;dos&#160;&#160;limites&#160;&#160;de&#160;&#160;tamanho&#160;&#160;e&#160;&#160;peso<br/>serão&#160;despachadas.</P>
+<P style="position:absolute;top:108px;left:48px;white-space:nowrap" class="ft113"><b>Cartão de Embarque</b></P>
+<P style="position:absolute;top:120px;left:361px;white-space:nowrap" class="ft114">&#160;</P>
+<P style="position:absolute;top:114px;left:369px;white-space:nowrap" class="ft115">| Boarding Pass</P>
+<P style="position:absolute;top:393px;left:41px;white-space:nowrap" class="ft14">PORTÃO&#160;| GATE</P>
+<P style="position:absolute;top:665px;left:121px;white-space:nowrap" class="ft125">É&#160;necessário&#160;apresentar&#160;um&#160;documento&#160;válido<br/>com&#160;&#160;foto.&#160;&#160;Sem&#160;&#160;este&#160;&#160;documento&#160;&#160;você&#160;&#160;não<br/>poderá&#160;embarcar.</P>
+<P style="position:absolute;top:772px;left:121px;white-space:nowrap" class="ft125">Dirija-se ao portão de embarque se estiver portando somente bagagem de mão, respeitando os limites de<br/>tamanho e peso.<br/>Caso contrário utilize os balcões exclusivos para despacho de bagagem no check in Tam.<br/>Apresente um documento original com foto no momento do embarque, atente-se ao horário de e o grupo<br/>impresso no cartão. Sua apresentação no portão deve ser feita com no mínimo 30 minutos de<br/>antecedência ao horário da decolagem para voos nacionais e 1 hora para voos internacionais.</P>
+<P style="position:absolute;top:577px;left:121px;white-space:nowrap" class="ft125">É&#160;&#160;necessário&#160;&#160;apresentar&#160;&#160;um&#160;&#160;cartão&#160;&#160;de<br/>embarque&#160;&#160;impresso.&#160;&#160;Por&#160;&#160;favor&#160;&#160;imprima&#160;&#160;o<br/>cartão&#160;de&#160;embarque&#160;e&#160;leve-o&#160;para&#160;o&#160;aeroporto.</P>
+<P style="position:absolute;top:577px;left:430px;white-space:nowrap" class="ft125">A&#160;&#160;franquia&#160;&#160;de&#160;&#160;bagagem&#160;&#160;despachada<br/>está&#160;&#160;disponível&#160;&#160;no&#160;&#160;e-mail&#160;&#160;de<br/>confirmação&#160;de&#160;voo.</P>
+<P style="position:absolute;top:1010px;left:124px;white-space:nowrap" class="ft116 nome">MARKUN / PEDRO</P>
+<P style="position:absolute;top:1066px;left:124px;white-space:nowrap" class="ft117"><b class="voo">JJ3112</b></P>
+<P style="position:absolute;top:1077px;left:512px;white-space:nowrap" class="ft118"><b>ASSENTO</b>&#160;| SEAT</P>
+<P style="position:absolute;top:1071px;left:617px;white-space:nowrap" class="ft119"><b class="assento">6D</b></P>
+<P style="position:absolute;top:265px;left:623px;white-space:nowrap"  class="ft124"><b class="para">Sao Paulo Guarulhos<br/>Intl</b></P>
+<P style="position:absolute;top:1118px;left:124px;white-space:nowrap" class="ft120"><b class="sigla_destino">FLN / GRU</b></P>
+<P style="position:absolute;top:1189px;left:125px;white-space:nowrap" class="ft111">ETKT</P>
+<P style="position:absolute;top:1149px;left:124px;white-space:nowrap" class="ft111 localizador">2BXCAV</P>
+<P style="position:absolute;top:1189px;left:256px;white-space:nowrap" class="ft111 etkt">9574747999082</P>
+<P style="position:absolute;top:1060px;left:322px;white-space:nowrap" class="ft116 data">19JUN13</P>
+<P style="position:absolute;top:1071px;left:731px;white-space:nowrap" class="ft119"><b>JJ</b></P>
+<P style="position:absolute;top:266px;left:169px;white-space:nowrap" class="ft121">Assento&#160;| Seat</P>
+<P style="position:absolute;top:467px;left:41px;white-space:nowrap" class="ft14">GRUPO&#160;| GROUP</P>
+<P style="position:absolute;top:449px;left:204px;white-space:nowrap" class="ft122">D</P>
+<P style="position:absolute;top:1116px;left:323px;white-space:nowrap" class="ft17"><b>BASICO</b></P>
+<P style="position:absolute;top:266px;left:53px;white-space:nowrap" class="ft121">Voo&#160;| Flight</P>
+<P style="position:absolute;top:411px;left:204px;white-space:nowrap" class="ft123 embarque">09:05</P>
+</DIV>
+</BODY>
+</HTML>
